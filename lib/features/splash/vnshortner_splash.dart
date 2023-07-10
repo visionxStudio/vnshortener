@@ -14,10 +14,10 @@ class VnShortnerSplashScreen extends ConsumerStatefulWidget {
   final bool isSwitched;
 
   @override
-  _VnShortnerSplashScreenState createState() => _VnShortnerSplashScreenState();
+  VnShortnerSplashScreenState createState() => VnShortnerSplashScreenState();
 }
 
-class _VnShortnerSplashScreenState extends ConsumerState<VnShortnerSplashScreen>
+class VnShortnerSplashScreenState extends ConsumerState<VnShortnerSplashScreen>
     with TickerProviderStateMixin {
   int duration = 1500;
   // Completer is used to await for splash animation complete then

@@ -29,9 +29,9 @@ class CustomProgressIndicatorOverlay extends StatelessWidget {
       layOutProgressIndicator = Center(child: progressIndicator);
     } else {
       layOutProgressIndicator = Positioned(
-        child: progressIndicator,
         left: offset!.dx,
         top: offset!.dy,
+        child: progressIndicator,
       );
     }
 
@@ -39,8 +39,8 @@ class CustomProgressIndicatorOverlay extends StatelessWidget {
       children: [
         child,
         Opacity(
-          child: ModalBarrier(dismissible: dismissible, color: color),
           opacity: opacity,
+          child: ModalBarrier(dismissible: dismissible, color: color),
         ),
         layOutProgressIndicator,
       ],

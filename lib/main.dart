@@ -8,7 +8,6 @@ import 'features/root/initialization.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // TODO: Uncomment
   MobileAds.instance.initialize();
   await InitializationHandler.initializeStorageService();
 

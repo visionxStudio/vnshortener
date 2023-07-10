@@ -8,7 +8,7 @@ import '../ads_services/banner_ad.dart';
 import '../homepage/bloc/navbar_provider.dart';
 import '../homepage/homepage.dart';
 
-final webViewKey = GlobalKey<_WebviewScreenState>();
+final webViewKey = GlobalKey<WebviewScreenState>();
 
 class WebViewNavigatePage extends ConsumerStatefulWidget {
   const WebViewNavigatePage(
@@ -84,10 +84,10 @@ class WebviewScreen extends ConsumerStatefulWidget {
   final String url;
 
   @override
-  _WebviewScreenState createState() => _WebviewScreenState();
+  WebviewScreenState createState() => WebviewScreenState();
 }
 
-class _WebviewScreenState extends ConsumerState<WebviewScreen>
+class WebviewScreenState extends ConsumerState<WebviewScreen>
     with AutomaticKeepAliveClientMixin {
   WebViewController? _webViewController;
 
@@ -100,6 +100,7 @@ class _WebviewScreenState extends ConsumerState<WebviewScreen>
           _webViewController?.goBack();
           return false;
         } else {
+          // ignore: use_build_context_synchronously
           await showDialog(
             context: context,
             builder: (context) => AlertDialog(
@@ -203,7 +204,6 @@ class _WebviewScreenState extends ConsumerState<WebviewScreen>
                 ),
               ],
             ),
-            // TODO: uncomment
             const Align(
               alignment: Alignment.bottomCenter,
               child: BannerAdWidget(),

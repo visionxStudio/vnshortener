@@ -24,10 +24,9 @@ class WebViewPage extends StatefulWidget {
 }
 
 class WebViewPageState extends State<WebViewPage> {
-  // TODO Uncomment
   AppOpenAdManager appOpenAdManager = AppOpenAdManager();
-  final webViewKey1 = GlobalKey<_HomepageState>();
-  final webViewKey2 = GlobalKey<_HomepageState>();
+  final webViewKey1 = GlobalKey<HomepageState>();
+  final webViewKey2 = GlobalKey<HomepageState>();
   @override
   void initState() {
     super.initState();
@@ -35,7 +34,6 @@ class WebViewPageState extends State<WebViewPage> {
   }
 
   Future<void> showAppOpenAds() async {
-    // TODO Uncomment
     appOpenAdManager.loadAd();
   }
 
@@ -67,10 +65,10 @@ class Homepage extends ConsumerStatefulWidget {
   final String url;
 
   @override
-  _HomepageState createState() => _HomepageState();
+  HomepageState createState() => HomepageState();
 }
 
-class _HomepageState extends ConsumerState<Homepage> {
+class HomepageState extends ConsumerState<Homepage> {
   Color appBarColor = Colors.black;
   bool isLoadingUrl = true;
   WebViewController? _webViewController;
@@ -82,6 +80,7 @@ class _HomepageState extends ConsumerState<Homepage> {
           _webViewController?.goBack();
           return false;
         } else {
+          // ignore: use_build_context_synchronously
           await showDialog(
             context: context,
             builder: (context) => AlertDialog(
