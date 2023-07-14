@@ -10,49 +10,6 @@ import '../../common/app_utils.dart';
 import '../../routes/app_router.gr.dart';
 import '../homepage/homepage.dart';
 
-// class Root extends ConsumerStatefulWidget {
-//   const Root({Key? key}) : super(key: key);
-
-//   @override
-//   _RootState createState() => _RootState();
-// }
-
-// class _RootState extends ConsumerState<Root> {
-//   @override
-//   void initState() {
-//     super.initState();
-//     ref.read(connectivityNotifierProvider);
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return ref.watch(connectivityNotifierProvider).hasInternetConnection
-//         ? const WebViewPage()
-//         : WillPopScope(
-//             onWillPop: () async {
-//               return (await showDialog(
-//                     context: context,
-//                     builder: (context) => AlertDialog(
-//                       title: const Text('Are you sure?'),
-//                       content: const Text('Do you want to exit the App'),
-//                       actions: <Widget>[
-//                         TextButton(
-//                           onPressed: () => Navigator.of(context).pop(false),
-//                           child: const Text('No'),
-//                         ),
-//                         TextButton(
-//                           onPressed: () => Navigator.of(context).pop(true),
-//                           child: const Text('Yes'),
-//                         ),
-//                       ],
-//                     ),
-//                   )) ??
-//                   false;
-//             },
-//             child: const NoConnectivityScreen());
-//   }
-// }
-
 class Root extends StatelessWidget {
   const Root({Key? key, this.isSwitching = false}) : super(key: key);
   final bool isSwitching;
