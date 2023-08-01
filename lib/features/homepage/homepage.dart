@@ -175,6 +175,7 @@ class HomepageState extends ConsumerState<Homepage> {
                     gestureNavigationEnabled: true,
                     backgroundColor: const Color(0xff1e1e29),
                     onPageStarted: (String url) {
+                      debugPrint("........... ${widget.url}............");
                       if (url == "${widget.url}/") {
                         setState(() {
                           appBarColor = Colors.white;
