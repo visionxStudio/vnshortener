@@ -1,0 +1,82 @@
+{
+   
+ "welcome" : {
+        "maximize" : "Maximize your chances \nof passing the test",
+        "driving_exam" : "Driving License Exam",
+        "no_1" : "Nepal's No. 1 Driving Licence Practice Test",
+        "f_one" : "Higher chances \nof passing",
+        "f_two" : "Exam \nSimulations",
+        "f_three" : "Hard \nQuestions",
+        "f_four" : "All in \none",
+        "continue" : "Continue"
+   
+ },
+ "homepage" : {
+       "welcome" : "Welcome",
+       "road" : "Road & traffic Signs",
+       "practice" : "Practice Exam",
+       "take" : "Take Exam",
+       "study" : "Study Questions",
+       "take_a_exam"  :"Take a Exam",
+       "start" : "Start Exam",
+       "test_yourself" : "Take a exam to test yourself.",
+       "take_test" : "Take a test",
+       "ready" : "Ready ? Pass the test !",
+       "mock_test" : "Take our mock test to train for your exam day!",
+       "try" : "Try a test",
+       "color_blind" : " Color blind test !",
+       "color_blind_desc" : "Test your eye for color blindness !"
+ },
+ "setting" : {
+       "setting" : "Settings",
+       "account" : "Account",
+       "name" : "Change your name",
+       "privacy" : "Privacy",
+       "Miscellaneous" : "Miscellaneous",
+       "language"  :"Language",
+       "about"  : "About us",
+       "notification"  : "Notifications",
+       "change_language" : "Change the language"
+ },
+
+ "select_exam"  : {
+      "type" : "Select Exam Type",
+      "preference"  : "Select your exam preference",
+      "car" : "Category B",
+      "bike" :  "Category A & K",
+      "continue" : "Continue",
+      "warning" : "Please select any one category"
+ }, 
+ "exam_screen" :  {
+      "question"  :"Question",
+      "next" : "Next"
+ }, 
+
+
+ "quit" : {
+      "confirm"  :"Confirm Exit",
+      "sure"  : "Are you sure you want to quit exam?",
+      "cancel" :  "Cancel",
+      "exit"  : "Exit"
+ },
+
+ "drawer" : {
+     "homepage" : "Homepage",
+     "privacy" :  "Privacy",
+     "notification"  :"Notifications",
+     "about" : "About Us",
+     "rate" : "Rate Us"
+ },
+
+ "eye_test" : {
+     "color_test" : "Color vision test",
+     "what_see" : "What do you see ? ",
+     "tap" : "Tap on the options to select answers",
+     "check": "Check",
+     "result" : "Result",
+     "correct"  :"Correct Answer",
+     "wrong" : "Wrong Answer"
+ }
+
+
+}

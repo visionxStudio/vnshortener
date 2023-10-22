@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "992976335087",
+    "project_id": "likhitexam",
+    "storage_bucket": "likhitexam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992976335087:android:3571f3636eca47dd3f2b1a",
+        "android_client_info": {
+          "package_name": "com.visionxstudio.likhitexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992976335087-rkbn80nk3l049mi1gju88i9t9j2u31qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmQZfDTth8kVxuvuAUdRSBe0dbifqcK54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992976335087-rkbn80nk3l049mi1gju88i9t9j2u31qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

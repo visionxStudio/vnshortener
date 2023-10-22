@@ -1,4 +1,4 @@
-name: linkshortener
+name: likhitexam
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -17,7 +17,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.7+7
+version: 1.1.5+25
 
 environment:
   sdk: '>=2.17.0 <3.0.0'
@@ -31,6 +31,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   auto_route: ^3.2.0
   webview_flutter: ^3.0.4
   flutter_lints: ^2.0.0
@@ -43,6 +45,15 @@ dependencies:
   google_mobile_ads: ^2.3.0
   lottie: ^2.3.2
   permission_handler: ^10.4.3
+  freezed_annotation: any
+  json_annotation: ^4.5.0
+  flutter_local_notifications: ^9.6.0
+  intl: ^0.18.0
+  cached_network_image: ^3.2.1
+  dio: ^4.0.6
+  flutter_zoom_drawer: ^3.0.2
+  url_launcher: ^6.1.4
+  ionicons: ^0.2.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -56,14 +67,14 @@ dev_dependencies:
   build_runner: ^2.1.5
   freezed: ^1.1.0
   json_serializable: ^6.0.1
-#   flutter_launcher_icons: any
+  flutter_launcher_icons: any
 
 
-# flutter_icons:
-#   android: false
-#   ios: true
-#   image_path: "assets/images/appico.png"
-#   remove_alpha_ios : true
+flutter_icons:
+  android: false
+  ios: true
+  image_path: "assets/images/icon.png"
+  remove_alpha_ios : true
 
   
 
@@ -79,7 +90,28 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/lang/
     - assets/images/
+    - assets/lottie/
+
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-Regular.ttf
+          style: normal
+          weight: 400
+
+        - asset: assets/fonts/Manrope-Bold.ttf
+          style: normal
+          weight: 700
+
+        - asset: assets/fonts/Manrope-SemiBold.ttf
+          style: normal
+          weight: 600
+
+        - asset: assets/fonts/Manrope-Medium.ttf
+          style: normal
+          weight: 500
 
   # To add assets to your application, add an assets section, like this:
   # assets:
