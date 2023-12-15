@@ -2,20 +2,15 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:likhitexam/common/data/car_questions_list.dart';
 import 'package:likhitexam/features/exam_screen/model/question_answer_model/question_answer_model.dart';
 
+import 'package:likhitexam/common/data/car_questions_list.dart';
 import '../../../common/data/bike_image_questions.dart';
-import '../../../common/data/questions.dart';
+import '../../../common/data/bike_questions_list.dart';
 import '../../../common/service/shared_pref_provider.dart';
 import '../../exam_screen/model/road_sign_questions_model/road_sign_question_model.dart';
 
-List<String> optionList = [
-  'क',
-  'ख',
-  'ग',
-  'घ',
-];
+List<String> optionList = ['क', 'ख', 'ग', 'घ'];
 
 final allQuestionNotifierProvider =
     ChangeNotifierProvider.autoDispose<ExamSelectionNotifier>(
