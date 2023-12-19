@@ -15,6 +15,7 @@ import 'package:likhitexam/features/home_screen/widgets/take_exam_widget.dart';
 import 'package:likhitexam/routes/app_router.gr.dart';
 import 'package:likhitexam/routes/router.dart';
 
+import '../../common/helper/update_helper.dart';
 import '../../common/widgets/input_field/minimal_input_field.dart';
 import '../../common/widgets/toast/flutter_toast.dart';
 import '../exam_selection/bloc/all_question_controller.dart';
@@ -40,22 +41,29 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   @override
+  void didChangeDependencies() {
+    UpdateHelper().getLatestAppVersion(context);
+
+    super.didChangeDependencies();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
-        physics: const BouncingScrollPhysics(),
+        physics: BouncingScrollPhysics(),
         child: Column(
           children: [
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: WelcomeWidget(),
             ),
-            const HeightWidget(16.0),
-            const TakeTestWidget(),
-            const HeightWidget(16.0),
+            HeightWidget(16.0),
+            TakeTestWidget(),
+            HeightWidget(16.0),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Padding(
                   padding: EdgeInsets.only(left: 16.0, bottom: 0.0),
                   child: NormalText(
@@ -67,9 +75,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 HomeCardFeatures(),
               ],
             ),
-            const BannerAdwidget(),
-            const TakeExamWidget(),
-            const HeightWidget(100.0),
+            BannerAdwidget(),
+            TakeExamWidget(),
+            HeightWidget(100.0),
           ],
         ),
       ),
@@ -101,9 +109,9 @@ class TakeTestWidget extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 width: SizeConfig.screenWidth * 0.6,
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     NormalText(
                       "homepage.ready",
                       color: kWhiteColor,
